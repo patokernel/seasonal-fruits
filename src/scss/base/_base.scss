@@ -1,0 +1,9 @@
+html,
+body {
+  font-family: var(--font-josefin);
+  background: linear-gradient(to bottom, var(--summer-1), var(--summer-2)) no-repeat fixed center;
+  height: 100vh;
+  color: var(--main-text-color);
+  overflow-x: hidden;
+  font-size: 10px;
+}
