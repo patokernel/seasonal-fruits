@@ -14,7 +14,7 @@
 }
 
 .seasons-container {
-  position: absolute;
+  position: relative;
   margin-top: 5rem;
   width: 50rem;
   height: 10rem;
@@ -41,10 +41,38 @@ nav {
 }
 
 svg {
-
   circle {
     fill: rgba(255, 255, 255, 0.4)
   }
+}
+
+.fruits-container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#summer-container,
+#spring-container,
+#fall-container,
+#winter-container {
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 5rem 0 1rem 0;
+  }
+}
+
+.season-fruits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,6 +101,17 @@ svg {
     span {
       line-height: 8rem;
       font-size: 3rem;
+    }
+  }
+
+  #summer-container,
+  #spring-container,
+  #fall-container,
+  #winter-container {
+    h2 {
+      text-align: center;
+      font-size: 3.5rem;
+      padding: 3rem 0 1rem 0;
     }
   }
 

@@ -1,8 +1,9 @@
-import '../scss/components/_Navbar.scss'
+import '../scss/components/_Seasons.scss'
 import { gsap, Sine } from 'gsap'
 import { Fragment, useEffect } from 'react'
+import Fruit from './Fruit'
 
-const Navbar = () => {
+const Seasons = () => {
 
   useEffect(() => {
 
@@ -146,16 +147,31 @@ const Navbar = () => {
       </div>
       <div className='fruits-container'>
         <div id='summer-container'>
+          <h2>Frutas de Verano</h2>
+          <div className="season-fruits">
+            <Fruit />
+          </div>
         </div>
         <div id='spring-container'>
+          <h2>Frutas de Primavera</h2>
+          <div className="season-fruits">
+          </div>
         </div>
         <div id='fall-container'>
+          <h2>Frutas de Otoño</h2>
+          <div className="season-fruits">
+
+          </div>
         </div>
         <div id='winter-container'>
+          <h2>Frutas de Invierno</h2>
+          <div className="season-fruits">
+
+          </div>
         </div>
       </div>
     </Fragment>
   )
 }
 
-export default Navbar
+export default Seasons
