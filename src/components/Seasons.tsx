@@ -1,7 +1,7 @@
 import '../scss/components/_Seasons.scss'
 import { gsap, Sine } from 'gsap'
 import { Fragment, useEffect } from 'react'
-import Fruit from './Fruit'
+import SummerFruits from './SummerFruits'
 
 const Seasons = () => {
 
@@ -149,7 +149,7 @@ const Seasons = () => {
         <div id='summer-container'>
           <h2>Frutas de Verano</h2>
           <div className="season-fruits">
-            <Fruit />
+            <SummerFruits />
           </div>
         </div>
         <div id='spring-container'>
