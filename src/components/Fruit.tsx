@@ -2,11 +2,11 @@ import '../scss/components/_Fruit.scss'
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 
-const Fruit = ({ fruta, especie, familia, origen, descripcion, produccion, micronutrientes }: any) => {
+const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, description, production, micronutrients }: any) => {
 
   useEffect(() => {
 
-    gsap.set('.information', { yPercent: 120 });
+    gsap.set('.information', { yPercent: 100 });
 
     gsap.utils.toArray('.container').forEach((container: any) => {
       let info = container.querySelector('.information'),
@@ -17,47 +17,47 @@ const Fruit = ({ fruta, especie, familia, origen, descripcion, produccion, micro
         .to(silhouette, { opacity: 1 }, 0);
 
       container.addEventListener('scroll', () => tl.play());
-      container.addEventListener('mouseout', () => tl.reverse());
+      container.addEventListener('scroll', () => tl.reverse());
     });
 
   })
 
   return (
     <div className='container'>
-      <div className='fruit-img' style={{ 'backgroundImage': 'url("https://www.pngall.com/wp-content/uploads/2016/04/Watermelon-Free-PNG-Image.png")' }}></div>
-      <div className='card' style={{ 'background': 'url("https://www.publicdomainpictures.net/pictures/50000/velka/tree-1369547920oel.jpg") no-repeat center' }}>
-        <h1 className='fruit-title'>{fruta}</h1>
+      <div className='fruit-img' style={fruitImg}></div>
+      <div className='card' style={plantImg}>
+        <h1 className='fruit-title'>{fruitName}</h1>
         <div className='more-info'>
-          <span>⏬️</span>
+          <span>⤵️</span>
         </div>
         <div className='information' id='fruit-info'>
-          <h3 id='fruit-name'>{especie}</h3>
+          <h3 id='fruit-name'>{species}</h3>
           <div className='table-container'>
             <table>
               <tbody>
                 <tr>
                   <th>Familia</th>
-                  <td>{familia}</td>
+                  <td>{family}</td>
                 </tr>
                 <tr>
                   <th>Especie</th>
-                  <td>{especie}</td>
+                  <td>{species}</td>
                 </tr>
                 <tr>
                   <th>Origen</th>
-                  <td>{origen}</td>
+                  <td>{origin}</td>
                 </tr>
                 <tr>
                   <th>Descripción</th>
-                  <td>{descripcion}</td>
+                  <td>{description}</td>
                 </tr>
                 <tr>
                   <th>Producción</th>
-                  <td>{produccion}</td>
+                  <td>{production}</td>
                 </tr>
                 <tr>
                   <th>Micro-nutrientes</th>
-                  <td>{micronutrientes}</td>
+                  <td>{micronutrients}</td>
                 </tr>
               </tbody>
             </table>
