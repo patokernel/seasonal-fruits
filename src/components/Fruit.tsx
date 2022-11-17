@@ -2,22 +2,18 @@ import '../scss/components/_Fruit.scss'
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 
-const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, description, production, micronutrients }: any) => {
+const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, description, production1, production2, production3, micronutrient1, micronutrient2, micronutrient3 }: any) => {
 
   useEffect(() => {
 
     gsap.set('.information', { yPercent: 100 });
 
     gsap.utils.toArray('.container').forEach((container: any) => {
-      let info = container.querySelector('.information'),
-        silhouette = container.querySelector('.silhouette'),
-        tl = gsap.timeline({ paused: true });
-
+      let info = container.querySelector('.information')
+      let tl = gsap.timeline({ paused: true })
       tl.to(info, { yPercent: 0 })
-        .to(silhouette, { opacity: 1 }, 0);
-
-      container.addEventListener('scroll', () => tl.play());
-      container.addEventListener('scroll', () => tl.reverse());
+      container.addEventListener('scroll', () => tl.play())
+      container.addEventListener('scroll', () => tl.reverse())
     });
 
   })
@@ -53,11 +49,11 @@ const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, descrip
                 </tr>
                 <tr>
                   <th>Producción</th>
-                  <td>{production}</td>
+                  <td>1. {production1}<br />2. {production2}<br />3. {production3}</td>
                 </tr>
                 <tr>
                   <th>Micro-nutrientes</th>
-                  <td>{micronutrients}</td>
+                  <td>1. {micronutrient1}<br />2. {micronutrient2}<br />3. {micronutrient3}</td>
                 </tr>
               </tbody>
             </table>
