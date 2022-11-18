@@ -4,6 +4,7 @@ import { Fragment, useEffect } from 'react'
 import SummerFruits from './SummerFruits'
 import SpringFruits from './SpringFruits'
 import FallFruits from './FallFruits'
+import WinterFruits from './WinterFruits'
 
 const Seasons = () => {
 
@@ -169,7 +170,7 @@ const Seasons = () => {
         <div id='winter-container'>
           <h2>Frutas de Invierno</h2>
           <div className="season-fruits">
-
+            <WinterFruits />
           </div>
         </div>
       </div>
