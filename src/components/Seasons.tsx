@@ -3,6 +3,7 @@ import { gsap, Sine } from 'gsap'
 import { Fragment, useEffect } from 'react'
 import SummerFruits from './SummerFruits'
 import SpringFruits from './SpringFruits'
+import FallFruits from './FallFruits'
 
 const Seasons = () => {
 
@@ -162,7 +163,7 @@ const Seasons = () => {
         <div id='fall-container'>
           <h2>Frutas de Otoño</h2>
           <div className="season-fruits">
-
+            <FallFruits />
           </div>
         </div>
         <div id='winter-container'>
