@@ -26,8 +26,8 @@ const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, descrip
         <div className='more-info'>
           <span>⤵️</span>
         </div>
-        <div className='information' id='fruit-info'>
-          <h3 id='fruit-name'>{species}</h3>
+        <div className='information'>
+          <h3 className='fruit-name'>{species}</h3>
           <div className='table-container'>
             <table>
               <tbody>

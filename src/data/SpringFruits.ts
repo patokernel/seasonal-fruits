@@ -54,7 +54,7 @@ export const springFruits = [
     'species': 'Persea americana',
     'family': 'Lauraceaeeae',
     'origin': 'Coaxcatlán (México)',
-    'description': 'Es una baya oval o piriforme, según la variedad, de tamaño muy variado (7 a 33 cm de largo y hasta 15 cm de ancho), cáscara de color verde a púrpura oscuro, pudiendo ser delgada, gruesa, lisa o ligeramente rugosa, a veces con una apariencia como la del cuero.Pulpa firme, oleíca, de un color que varía desde el amarillo al verde claro.Contiene una semilla grande (5 a 6, 4 cm), dura y pesada, redonda o puntuda, de color marfil.',
+    'description': 'Es una baya oval o piriforme, según la variedad, de tamaño muy variado (7 a 33 cm de largo y hasta 15 cm de ancho), cáscara de color verde a púrpura oscuro, pudiendo ser delgada, gruesa, lisa o ligeramente rugosa, a veces con una apariencia como la del cuero. Pulpa firme, oleíca, de un color que varía desde el amarillo al verde claro. Contiene una semilla grande (5 a 6, 4 cm), dura y pesada, redonda o puntuda, de color marfil.',
     'production1': '🇲🇽 México',
     'production2': '🇩🇴 R. Dominicana',
     'production3': '🇵🇪 Perú',

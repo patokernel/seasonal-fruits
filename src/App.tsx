@@ -2,7 +2,7 @@ import Seasons from "./components/Seasons"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Seasons />
     </div>
   )

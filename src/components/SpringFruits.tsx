@@ -2,12 +2,13 @@ import { Fragment } from "react"
 import { springFruits } from "../data/SpringFruits"
 import Fruit from "./Fruit"
 
-const SummerFruits = () => {
+const SpringFruits = () => {
   return (
     <Fragment>
       {
-        springFruits.map((fruit) =>
+        springFruits.map((fruit, i) =>
           <Fruit
+            key={i}
             fruitImg={fruit.fruitImg}
             plantImg={fruit.plantImg}
             fruitName={fruit.fruitName}
@@ -17,7 +18,7 @@ const SummerFruits = () => {
             description={fruit.description}
             production1={fruit.production1}
             production2={fruit.production2}
-            production3={fruit.production2}
+            production3={fruit.production3}
             micronutrient1={fruit.micronutrient1}
             micronutrient2={fruit.micronutrient2}
             micronutrient3={fruit.micronutrient3}
@@ -28,4 +29,4 @@ const SummerFruits = () => {
   )
 }
 
-export default SummerFruits
+export default SpringFruits
