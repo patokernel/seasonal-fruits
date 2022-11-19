@@ -16,4 +16,3 @@ Además, cada fruta cuenta con información sobre:
 - Micronutrientes (top 3)
 
 <br>
-<p align="center"> <img src="https://media4.giphy.com/media/5QXWRp1CNGnMnZunC3/giphy.gif" /></p>
