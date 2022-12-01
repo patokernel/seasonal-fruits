@@ -7,7 +7,7 @@ interface Props {
     backgroundImage: string
   }
   plantImg: {
-    backgroundImage: string
+    background: string
   }
   fruitName: string
   species: string
