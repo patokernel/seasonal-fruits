@@ -2,7 +2,27 @@ import '../scss/components/_Fruit.scss'
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 
-const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, description, production1, production2, production3, micronutrient1, micronutrient2, micronutrient3 }: any) => {
+interface Props {
+  fruitImg: {
+    backgroundImage: string
+  }
+  plantImg: {
+    backgroundImage: string
+  }
+  fruitName: string
+  species: string
+  family: string
+  origin: string
+  description: string
+  production1: string
+  production2: string
+  production3: string
+  micronutrient1: string
+  micronutrient2: string
+  micronutrient3: string
+}
+
+const Fruit = ({ fruitImg, plantImg, fruitName, species, family, origin, description, production1, production2, production3, micronutrient1, micronutrient2, micronutrient3 }: Props) => {
 
   useEffect(() => {
 
